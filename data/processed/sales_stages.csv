@@ -1,0 +1,9 @@
+stage,default_probability,max_expected_days,stage_order
+qualification,0.1,12,1
+discovery,0.2,15,2
+solution_fit,0.35,18,3
+proposal,0.55,20,4
+negotiation,0.7,18,5
+legal_procurement,0.85,15,6
+closed_won,1.0,0,7
+closed_lost,0.0,0,8

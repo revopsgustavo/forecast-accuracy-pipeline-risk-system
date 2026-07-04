@@ -1,0 +1,42 @@
+check_name,table,status,details,row_count
+file_exists,opportunities,pass,File exists,120
+required_columns,opportunities,pass,Missing columns: [],120
+ids_not_null,opportunities,pass,opportunity_id nulls: 0,120
+ids_not_null,opportunities,pass,account_id nulls: 0,120
+ids_not_null,opportunities,pass,ae_id nulls: 0,120
+non_negative_money,opportunities,pass,amount negatives: 0,120
+valid_forecast_categories,opportunities,pass,Invalid categories: [],120
+valid_stages,opportunities,pass,Invalid stages: [],120
+valid_close_dates,opportunities,pass,Invalid close dates: 0,120
+valid_probabilities,opportunities,pass,Probability scale must be 0-1 or 0-100,120
+file_exists,accounts,pass,File exists,60
+required_columns,accounts,pass,Missing columns: [],60
+ids_not_null,accounts,pass,account_id nulls: 0,60
+file_exists,aes,pass,File exists,6
+required_columns,aes,pass,Missing columns: [],6
+ids_not_null,aes,pass,ae_id nulls: 0,6
+file_exists,sales_stages,pass,File exists,8
+required_columns,sales_stages,pass,Missing columns: [],8
+file_exists,forecast_snapshots,pass,File exists,144
+required_columns,forecast_snapshots,pass,Missing columns: [],144
+ids_not_null,forecast_snapshots,pass,ae_id nulls: 0,144
+non_negative_money,forecast_snapshots,pass,submitted_forecast negatives: 0,144
+non_negative_money,forecast_snapshots,pass,weighted_forecast negatives: 0,144
+file_exists,quota_targets,pass,File exists,36
+required_columns,quota_targets,pass,Missing columns: [],36
+ids_not_null,quota_targets,pass,ae_id nulls: 0,36
+non_negative_money,quota_targets,pass,target_amount negatives: 0,36
+file_exists,deal_activity,pass,File exists,240
+required_columns,deal_activity,pass,Missing columns: [],240
+ids_not_null,deal_activity,pass,opportunity_id nulls: 0,240
+file_exists,stage_history,pass,File exists,360
+required_columns,stage_history,pass,Missing columns: [],360
+ids_not_null,stage_history,pass,opportunity_id nulls: 0,360
+file_exists,close_outcomes,pass,File exists,27
+required_columns,close_outcomes,pass,Missing columns: [],27
+ids_not_null,close_outcomes,pass,opportunity_id nulls: 0,27
+ids_not_null,close_outcomes,pass,ae_id nulls: 0,27
+non_negative_money,close_outcomes,pass,actual_closed_won negatives: 0,27
+file_exists,risk_flags,pass,File exists,140
+required_columns,risk_flags,pass,Missing columns: [],140
+ids_not_null,risk_flags,pass,opportunity_id nulls: 0,140
